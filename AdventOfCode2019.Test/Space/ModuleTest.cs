@@ -26,5 +26,12 @@ namespace AdventOfCode2019.Test.Space
             var module = new Module(1969);
             Assert.That(module.TotalFuelRequired(), Is.EqualTo(966));
         }
+        
+        [Test]
+        public void CalculateFuelIncludeFuelMassOfFuel2()
+        {
+            var module = new Module(100756);
+            Assert.That(module.TotalFuelRequired(), Is.EqualTo(50346));
+        }
     }
 }
