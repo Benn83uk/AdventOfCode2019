@@ -33,5 +33,12 @@ namespace AdventOfCode2019.Test.Space
             var craft = new Spacecraft("TestFiles/DayOneExample.txt");
             Assert.That(craft.FuelRequired(), Is.EqualTo(34241));
         }
+        
+        [Test]
+        public void DayOneTaskOneAnswer()
+        {
+            var craft = new Spacecraft("TestFiles/DayOneInput.txt");
+            Assert.That(craft.FuelRequired(), Is.EqualTo(3420719));
+        }
     }
 }
