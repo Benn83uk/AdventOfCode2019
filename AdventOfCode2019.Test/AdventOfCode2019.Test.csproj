@@ -16,4 +16,10 @@
       <ProjectReference Include="..\AdventOfCode2019.App\AdventOfCode2019.App.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="TestFiles\DayOneExample.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
