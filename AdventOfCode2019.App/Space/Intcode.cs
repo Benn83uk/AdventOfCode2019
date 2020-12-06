@@ -66,7 +66,7 @@ namespace AdventOfCode2019.App.Space
             ops[storePosition] = input1 * input2;
         }
 
-        public int[] RunFor(int expected)
+        public int RunFor(int expected)
         {
             var limit = Math.Min(_ops.Count, 100);
             for (var noun = 0; noun < limit; noun++)
@@ -74,11 +74,11 @@ namespace AdventOfCode2019.App.Space
                 for (var verb = 0; verb < limit; verb++)
                 {
                     var actual = Run(noun, verb);
-                    if (actual == expected) return new int[] {noun, verb};
+                    if (actual == expected) return (100 * noun) + verb;
                 }
             }
 
-            return Array.Empty<int>();
+            return -1;
         }
     }
 }
