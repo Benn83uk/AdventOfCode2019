@@ -22,5 +22,10 @@ namespace AdventOfCode2019.App.Space
         {
             return _modules.Sum(m => m.FuelRequired());
         }
+
+        public int FuelRequiredIncludingFuel()
+        {
+            return _modules.Sum(m => m.TotalFuelRequired());
+        }
     }
 }
