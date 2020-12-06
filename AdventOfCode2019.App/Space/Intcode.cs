@@ -20,6 +20,13 @@ namespace AdventOfCode2019.App.Space
             return _ops[0];
         }
 
+        public int Run(int param1, int param2)
+        {
+            _ops[1] = param1;
+            _ops[2] = param2;
+            return Run();
+        }
+
         private bool Run(int pointer)
         {
             var op = _ops[pointer];
